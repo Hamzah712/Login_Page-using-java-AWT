@@ -28,5 +28,5 @@ Conatins the main runnable class
 ## Conclusion
 Overall, this class provides the basic structure for a login interface in Java, including input validation and user feedback, and the welcome page which will welcome the user to the system.
 
-![command1](C:\Users\pc\eclipse-workspace\Login_Page\images\command1jpg)
-Git init
+## Images
+All images are included in the word document images.
