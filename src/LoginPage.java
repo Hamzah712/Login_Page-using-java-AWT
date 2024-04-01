@@ -80,7 +80,7 @@ public class LoginPage extends WindowAdapter implements ActionListener {
 				messageLabel.setText("Error! Please make sure all fields are filled.");
 				
 				messageLabel2.setText("):");
-				messageLabel2.setBounds(125,30,250,35);
+				messageLabel2.setBounds(200,30,250,35);
 				messageLabel2.setFont(new Font(null, Font.PLAIN,25));
 				
 				userIDField.setText("");
@@ -93,7 +93,7 @@ public class LoginPage extends WindowAdapter implements ActionListener {
 				messageLabel.setText("Invalid input, please try again");
 				
 				messageLabel2.setText("):");
-				messageLabel2.setBounds(125,30,250,35);
+				messageLabel2.setBounds(200,30,250,35);
 				messageLabel2.setFont(new Font(null, Font.PLAIN,25));
 				
 				userIDField.setText("");
