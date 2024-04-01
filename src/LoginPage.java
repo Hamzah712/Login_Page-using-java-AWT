@@ -10,6 +10,7 @@ public class LoginPage extends WindowAdapter implements ActionListener {
 	Label userIDLabel = new Label("UserID: ");
 	Label userPasswordLabel = new Label("password: ");
 	Label messageLabel = new Label();
+	Label messageLabel2 = new Label();
 	
 	//TextFields
 	TextField userIDField = new TextField();
@@ -42,6 +43,7 @@ public class LoginPage extends WindowAdapter implements ActionListener {
 		
 		//Adding Components
 		loginFrame.add(messageLabel);
+		loginFrame.add(messageLabel2);
 		loginFrame.add(userIDLabel);
 		loginFrame.add(userPasswordLabel);
 		loginFrame.add(userIDField);
@@ -76,6 +78,11 @@ public class LoginPage extends WindowAdapter implements ActionListener {
 				messageLabel.setForeground(Color.RED);
 				messageLabel.setFont(new Font(null, Font.PLAIN,12));
 				messageLabel.setText("Error! Please make sure all fields are filled.");
+				
+				messageLabel2.setText("):");
+				messageLabel2.setBounds(125,30,250,35);
+				messageLabel2.setFont(new Font(null, Font.PLAIN,25));
+				
 				userIDField.setText("");
 				userPasswordField.setText("");
 			}
@@ -84,6 +91,11 @@ public class LoginPage extends WindowAdapter implements ActionListener {
 				messageLabel.setForeground(Color.RED);
 				messageLabel.setFont(new Font(null, Font.PLAIN,12));
 				messageLabel.setText("Invalid input, please try again");
+				
+				messageLabel2.setText("):");
+				messageLabel2.setBounds(125,30,250,35);
+				messageLabel2.setFont(new Font(null, Font.PLAIN,25));
+				
 				userIDField.setText("");
 				userPasswordField.setText("");
 			}
